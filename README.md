@@ -9,7 +9,8 @@
 ## Usage:
     At the beginning, you will notice the blank screen, once you read the title, you will know
     how to proceed.
-
+    
+![Captura de pantalla de 2021-06-25 17-39-47](https://user-images.githubusercontent.com/75394517/123483147-ad2f1f00-d5dc-11eb-859a-a58683ec056d.png)
 
 ## Tips of interest:
     You will notice in the code that I made it quite simple and light. If well, I am aware that
