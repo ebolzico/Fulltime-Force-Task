@@ -4,6 +4,6 @@ const {getCommits}= require('../controllers/commits.js')
 
 const router= Router()
 
-router.get('/', getCommits)
+router.post('/', getCommits)
 
 module.exports= router

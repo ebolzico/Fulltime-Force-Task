@@ -6,7 +6,7 @@ async function getCommits(req, res){
         let response= await axios.get(`https://api.github.com/repos/${owner}/${repository}/commits`)
         res.status(200).json(response.data)
     }
-    catch(error){res.json(error, 'error')}
+    catch(error){console.log(error)}
 }
 
 module.exports= {getCommits}
