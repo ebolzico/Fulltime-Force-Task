@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState} from 'react'
+import s from './CommitsHistory.module.css'
 const axios= require('axios')
+
 
 export default function CommitsHistory() {
     
@@ -10,7 +12,7 @@ export default function CommitsHistory() {
         commits: {
             commit: {
                 message: string,
-                commiter: {
+                committer: {
                     name: string,
                     date: string,
                 }
@@ -62,9 +64,9 @@ export default function CommitsHistory() {
                 commits: [{
                     commit:{
                         message: 'Owner or repo not found',
-                        commiter: {
-                            name: '',
-                            date:''
+                        committer: {
+                            name: 'None',
+                            date:'Right now'
                         }
                     }
                 }]
@@ -74,18 +76,30 @@ export default function CommitsHistory() {
     }
     
     return (
-        <div>
-            <h1>Here, you can type any repo owner & name to collect those commits</h1>
-            <h3>By default, if you don't type any data, you can press the button and it'll show you the current page commits</h3>
-            <form onSubmit={handleSubmit} >
-                <input placeholder='owner' name='owner' onChange={handleChange} />
-                <input placeholder='repo' name='repo' onChange={handleChange} />
-                <input type='submit' value='Get commits' />
-            </form>
-            <div>
+        <div className={s.container}>
+            <div className={s.data}>
+                <div className={s.info}>
+                    By default, if you don't type any data, you can press the button and it'll show you the current page commits. But if you type an owner and repo name, it will show the repo's full commit list.
+                </div>
+                <form onSubmit={handleSubmit} >
+                    <input placeholder='Owner' name='owner' onChange={handleChange} />
+                    <input placeholder='Repo' name='repo' onChange={handleChange} />
+                    <input className={s.btn} type='submit' value='Get commits' />
+                </form>
+            </div>
+            <div className={s.historyContainer}>
+                <h1>Commits list:</h1>
                 {     
-                    repoData.commits.map(commit => {
-                        return <h4>{commit.commit.message}</h4>
+                    repoData.commits?.map(commit => {
+                        return (
+                            <div className={s.card}>
+                                <p><b>Date:</b> {commit.commit.committer.date}</p>
+                                <ul>
+                                    <li><b>Commited by:</b> {commit.commit.committer.name}</li>
+                                    <li><b>Message:</b> <span className={s.message}>"{commit.commit.message}"</span></li>
+                                </ul>    
+                            </div>
+                        )
                      })
                 }
             </div>

@@ -1,0 +1,103 @@
+@keyframes appear {
+    from {width: 0}
+    to {width: 90%;}
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 1px 1px 30px 1px black;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+s.info {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+.data > form {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.data > form > input {
+    margin: 5%;
+    width: 60%;
+    height: 3%;
+    border-bottom: 1px solid #3c096c;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: all 0.3s ease;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn {
+    margin: 5%;
+    width: 17% !important;
+    height: 6% !important;
+    border: 3px solid #3c096c !important;
+    outline: none;
+    font-weight: 800;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #3c096c;
+}
+
+.historyContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 90%;
+    margin: 1vh;
+    margin-right: 3vh;
+    text-align: center;
+    border: 1px solid #8400ff;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+.card > p {
+    margin: 1px;
+    text-align: start;
+}
+.card > ul {
+    list-style-type: none;
+}
+.message {
+    color: #8400ff
+}
