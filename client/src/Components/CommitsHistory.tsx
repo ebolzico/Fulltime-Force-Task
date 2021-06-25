@@ -87,11 +87,11 @@ export default function CommitsHistory() {
         <div className={s.container}>
             <div className={s.data}>
                 <div className={s.info}>
-                    <span>By default, if you don't type any data, you can press the button and it'll show you the current page commits. But if you type an owner and repo name, it will show the repo's full commit list.</span>
+                    <span>By default, if you don't type any data, you can press the button and it'll show the current page commits. But if you type an owner and repository name, it will show it's full commit list.</span>
                 </div>
                 <form onSubmit={handleSubmit} >
                     <input placeholder='Owner' name='owner' onChange={handleChange} />
-                    <input placeholder='Repo' name='repo' onChange={handleChange} />
+                    <input placeholder='Repository' name='repo' onChange={handleChange} />
                     <input className={s.btn} type='submit' value='Get commits' />
                 </form>
             </div>
