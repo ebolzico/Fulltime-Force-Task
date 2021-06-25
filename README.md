@@ -8,7 +8,8 @@
 
 ## Usage:
     At the beginning, you will notice the blank screen, once you read the title, you will know
-    how to proceed.
+    how to proceed.Take into consideration that the "Owner" field refers to the name of the github account
+    that made the repository. 
     
 ![Captura de pantalla de 2021-06-25 17-39-47](https://user-images.githubusercontent.com/75394517/123483147-ad2f1f00-d5dc-11eb-859a-a58683ec056d.png)
 
