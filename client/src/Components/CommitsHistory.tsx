@@ -99,20 +99,20 @@ export default function CommitsHistory() {
                 <h1>Commits list:</h1>
                 {   
                     flag ?  
-                    repoData.commits.length > 0 ? 
-                        repoData.commits.map(commit => {
-                            return (
-                                <div className={s.card}>
-                                    <p><b>Date:</b> {commit.commit.committer.date}</p>
-                                    <ul>
-                                        <li><b>Commited by:</b> {commit.commit.committer.name}</li>
-                                        <li><b>Message:</b> <span className={s.message}>"{commit.commit.message}"</span></li>
-                                    </ul>    
-                                </div>
-                            )
-                        })
-                     : <h3>Loading...</h3>
-                     :''
+                        repoData.commits.length > 0 ? 
+                            repoData.commits.map(commit => {
+                                return (
+                                    <div className={s.card}>
+                                        <p><b>Date:</b> {commit.commit.committer.date}</p>
+                                        <ul>
+                                            <li><b>Commited by:</b> {commit.commit.committer.name}</li>
+                                            <li><b>Message:</b> <span className={s.message}>"{commit.commit.message}"</span></li>
+                                        </ul>    
+                                    </div>
+                                )
+                            })
+                        : <h3>Loading...</h3>
+                    :''
                 }
             </div>
         </div>
