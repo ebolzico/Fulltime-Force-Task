@@ -21,16 +21,17 @@
     align-items: center;
 }
 
-s.info {
+.info {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 40%;
+    height: 30%;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
 }
-
+.info > span {
+    font-size: 30px;
+}
 
 .data > form {
     display: flex;
@@ -44,7 +45,8 @@ s.info {
 .data > form > input {
     margin: 5%;
     width: 60%;
-    height: 3%;
+    height: 5%;
+    font-size: 20px;
     border-bottom: 1px solid #3c096c;
     border-top: none;
     border-right: none;
@@ -58,7 +60,8 @@ s.info {
 .btn {
     margin: 5%;
     width: 17% !important;
-    height: 6% !important;
+    height: 8% !important;
+    font-size: 15px !important;
     border: 3px solid #3c096c !important;
     outline: none;
     font-weight: 800;
