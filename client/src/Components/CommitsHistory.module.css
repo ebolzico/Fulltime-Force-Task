@@ -83,7 +83,7 @@
     text-align: center;
     border: 1px solid #8400ff;
     animation-name: appear;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
 }
 .card > p {
     margin: 1px;
