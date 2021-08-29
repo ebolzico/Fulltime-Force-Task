@@ -3,13 +3,15 @@
     Once there, you will execute the command 'npm install' and let the computer do it's job.
     When it finishes, you will place yourself in the 'client' folder and execute the same command.
 
-    When you've done with the previous instructions, you will place yourself in th general folder
+    When you're done with the previous instructions, you will place yourself in th general folder
     and execute 'npm start'. This will start the app.
 
 ## Usage:
     At the beginning, you will notice the blank screen, once you read the title, you will know
-    how to proceed.
-
+    how to proceed.Take into consideration that the "Owner" field refers to the name of the github account
+    that made the repository. 
+    
+![Captura de pantalla de 2021-06-25 17-39-47](https://user-images.githubusercontent.com/75394517/123483147-ad2f1f00-d5dc-11eb-859a-a58683ec056d.png)
 
 ## Tips of interest:
     You will notice in the code that I made it quite simple and light. If well, I am aware that
